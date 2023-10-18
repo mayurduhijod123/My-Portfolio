@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(142, 68, 164);
+        color: rgba(9, 4, 4, 0.92);
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 68px;
+        background-color: rgb(77, 20, 94);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(8, 8, 141);
+        font-size: 1rem;
+      }
+
+      .left {
+        font-size: 2rem;
+      }
+      main hr {
+        border: 0.5;
+        color: rgb(45, 3, 84);
+        height: 1.2px;
+        margin: 40px 80px;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+      }
+
+      .firstsection > div {
+        width: 30%;
+      }
+
+      .leftsection {
+        font-size: 3rem;
+        margin: 30px 0;
+      }
+
+      .rightsection img {
+        width: 80%;
+        margin: 50px 0;
+      }
+
+      .purple {
+        color: rgb(0, 95, 17);
+        font-size: 35px;
+      }
+
+      #element {
+        color: lavender;
+      }
+
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      .text-gray {
+        color: grey;
+      }
+      .secondsection .box {
+        background-color: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 50px;
+      } 
+      .secondsection .vertical div {
+        position: relative;
+        top: 94px;
+        right: 15px;
+        
+      }
+      .thirdsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+      }
+      .thirdsection div {
+        width: 40vw;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Mayur's Portfollio</div>
+
+        <div class="right">
+          <ul>
+            <li><a href="#">Conatact Me</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About </a></li>
+            <li><a href="#">Project</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, My Name is <span class="purple">Mayur Duhijod</span>
+          <div>and I am Passionate</div>
+          <span id="element"></span>
+        </div>
+
+        <div class="rightsection"><img src="dev.png" alt="Devloper" /></div>
+      </section>
+      <hr />
+
+      <section class="secondsection">
+        <span class="text-gray"> What I have done so far</span>
+        <h1>Technical Skills :</h1>
+        <div class="box">
+          <div class="vertical" ><div><B>Java</B></div></div>
+          <div class="vertical"><div><b>Data Structure</b></div></div>
+          <div class="vertical"><div><b>HTML</b></div></div>
+          <div class="vertical"><div><b>CSS</b></div></div>
+          <div class="vertical"><div><b>JS</b></div></div>
+          <div class="vertical"><div><b>REACT JS</b></div></div>
+          <div class="vertical"><div><b>SQl</b></div></div>
+          <div class="vertical"><div><b>GIT And GITHUb</b></div></div>
+        </div>
+      </section>
+      <hr>
+      <section class="thirdsection">
+        <div class="img1"><img src="images.png" alt="fil"></div>
+        <div class="img2">img2</div>
+      </section>
+    </main>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['web Devloper', 'Graphic Designer'],
+          typeSpeed: 50,
+        });
+      </script
+    </script>
+  </body>
+</html>
